@@ -1,0 +1,154 @@
+.modulo {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+.modulo h3 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+    position: relative;
+
+    text-align: center;
+}
+
+.modulo h3 span {
+}
+
+.modulo h3::before,
+.modulo h3::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background: var(--gradient);
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 2rem;
+}
+
+.modulo h3::before {
+    left: 10%;
+}
+
+.modulo h3::after {
+    right: 10%;
+}
+
+.modulo h4 {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 400;
+
+    margin-top: -.5rem;
+    margin-bottom: 2rem;
+}
+
+.modulo p {
+    color: #d3d8ef;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+
+    text-align: left;
+}
+
+.modulo .image img {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.modulo .cards {
+    padding-bottom: 3rem;
+}
+
+.modulo .cards .card img {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.modulo .swiper-pagination-bullet {
+    background-color: #ffffff14; 
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+  }
+  
+.modulo .swiper-pagination-bullet-active {
+    background: var(--gradient); 
+}
+
+.modulo .swiper-button-next,
+.modulo .swiper-button-prev {
+    color: #2bd900;
+    transform: scale(.5);
+}
+
+@media (min-width: 1080px) {
+    article.modulo h3 {
+        font-size: 6rem;
+    }
+
+    article.modulo h3::before,
+    article.modulo h3::after {
+        width: 25rem;
+    }
+
+    article.modulo h3::before {
+        left: 15%;
+    }
+    
+    article.modulo h3::after {
+        right: 15%;
+    }
+
+    article.modulo .swiper-button-next,
+    article.modulo .swiper-button-prev {
+        color: #2bd900;
+        transform: scale(1);
+        top: 50%;
+    }
+
+    article.modulo h4 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-top: -1rem;
+        margin-bottom: 4rem;
+    }
+
+    article.modulo .paragrafo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article.modulo p {
+        font-size: 1.8rem;
+        text-align: center;
+
+        width: 70%;
+
+    }
+
+    article.modulo .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    article.modulo.um img {
+        width: 60%;
+    }
+
+    article.modulo.dois .swiper {
+        padding-inline: 7rem;
+    }
+
+    article.modulo.tres img {
+        width: 50%;
+    }
+
+    article.modulo.quatro img {
+        width: 60%;
+    }
+}

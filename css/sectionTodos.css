@@ -1,0 +1,78 @@
+#todos {
+    position: relative;
+    overflow: hidden;
+}
+
+#todos img.bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    aspect-ratio: 9/16;
+    object-fit: cover;
+
+    filter: brightness(.3);
+}
+
+#todos .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todos h2 {
+    font-size: 2.5rem;
+    color: #e7e7e7;
+    margin-bottom: 4rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+#todos h2 span {
+    color: #fff;
+    font-weight: 600;
+}
+
+#todos h2 span.planilha {
+    color: var(--green);
+}
+
+#todos a button {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 1rem;
+    background: var(--gradient);
+    color: #fff;
+    font-weight: 500;
+
+    transition: all 200ms ease-in-out;
+}
+
+#todos a button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+    box-shadow:  13px 13px 27px #d1ffcd13,
+                -13px -13px 27px #d3fcd30f;
+}
+
+@media (min-width: 1080px) {  
+    section#todos img.bg {
+        aspect-ratio: 16/9;
+        filter: brightness(.2) blur(1px);
+    }
+
+    section#todos h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    section#todos a button {
+        font-size: 2rem;
+        padding: 1.2rem 4rem;
+    }
+
+}

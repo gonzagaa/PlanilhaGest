@@ -1,0 +1,24 @@
+#planilha {
+    position: relative;
+    overflow: hidden;
+    padding-block: 8rem;
+}
+
+#planilha header h2 {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+#planilha header h2 span {
+    color: var(--green);
+}
+
+@media (min-width: 1080px) {
+    #planilha header h2 {
+        font-size: 4rem;
+        margin-bottom: 7rem;
+    }
+}

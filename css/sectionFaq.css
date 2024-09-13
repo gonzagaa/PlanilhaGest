@@ -1,0 +1,198 @@
+#faq {
+    position: relative;
+    overflow: hidden;
+    background: var(--black-color);
+}
+
+#faq header h2 {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 4rem;
+    font-weight: 600;
+}
+
+#faq header h2 span {
+    color: var(--green);
+}
+
+#faq .faq {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    position: relative;
+    z-index: 10;
+}
+
+#faq details {
+    width: 100%;
+    user-select: none;
+}
+
+#faq summary {
+    color: #d0cfcffe;
+    font-weight: 500;
+    font-size: 1.4rem;
+
+    background: linear-gradient(145deg, #01070f, #000e1e);
+        box-shadow:  13px 13px 27px #00040973,
+                -13px -13px 27px #000b15b1;
+
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+
+    border-radius: 2rem;
+
+    border: 1px solid #5757575a;
+
+    transition: all 200ms ease-in-out;
+
+    font-family: "Bai Jamjuree", sans-serif;
+
+}
+
+#faq summary:hover {
+    cursor: pointer;
+    border: 2px solid #ababab93;
+}
+
+#faq details[open] summary {
+    border-radius: 2rem 2rem 0 0;
+    background: linear-gradient(140deg, #00000046, #00000046, #0000001d,#00000046);
+
+    border: 2px solid #ababab93;
+    border-bottom: 0;
+}
+
+#faq summary ion-icon {
+    font-size: 3rem;
+    transition: all .5s ease-in-out;
+    color: var(--primary-color);
+    transform: rotate(-45deg);
+    position: relative;
+    line-height: 0;
+}
+
+
+#faq details[open] summary ion-icon {
+    transform: rotate(0);
+}
+
+details>summary {
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none
+}
+
+#faq details p {
+    background: linear-gradient(140deg, #00196533, #00000046, #0000001d,#a482fa2d);
+
+    font-size: 1.8rem;
+    color: #e1e3ef;
+    padding: 3rem;
+    padding-top: 2rem;
+    padding-right: 10%;
+    text-align: left;
+    font-weight: 200;
+    border: 2px solid #ababab93;
+
+    border-top: 0;
+
+    border-radius: 0 0 2rem 2rem;
+}
+
+#faq .card {
+    box-shadow:  13px 13px 27px #00040973,
+                -13px -13px 27px #000b15b1;
+    background: linear-gradient(140deg, #00196533, #00000046, #0000001d,#a482fa2d);
+
+    padding: 3rem;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#faq .card h2 {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: 700;
+}
+
+#faq .card h3 {
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+#faq .card h3 span {
+    color: var(--green);
+}
+
+#faq .card a button {
+    width: 100%;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 1rem;
+    background: var(--gradient);
+    color: #fff;
+    font-weight: 500;
+
+    transition: all 200ms ease-in-out;
+}
+
+#faq .card a button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+    box-shadow:  13px 13px 27px #00240c,
+                -13px -13px 27px #001900;
+}
+
+@media (min-width: 1080px) {
+    section#faq header h2 {
+        font-size: 3rem;
+        margin-bottom: 7rem;
+        text-align: center;
+    }
+
+    section#faq summary {
+        font-size: 2rem;
+    }
+
+    section#faq details p {
+        font-size: 2rem;
+    }
+
+    section#faq .faq {
+        padding-inline: 8rem;
+    }
+
+    section#faq .card {
+        padding-block: 5rem;
+    }
+
+    section#faq .card h2 {
+        font-size: 3.5rem;
+    }
+    
+    section#faq .card h3 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+    
+    section#faq .card a button {
+        font-size: 2rem;
+        padding: 1rem 4rem;
+    }
+}

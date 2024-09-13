@@ -1,0 +1,109 @@
+#receber {
+    position: relative;
+    overflow: hidden;
+}
+
+#receber header h2 {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 4rem;
+    font-weight: 600;
+}
+
+#receber header h2 span {
+    color: var(--green);
+}
+
+#receber .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+#receber .cards .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#receber .cards .card img {
+    width: 8rem;
+
+    animation: icon infinite ease-in-out 4s;
+}
+
+#receber .cards .card h3 {
+    font-weight: 500;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+#receber a button {
+    margin-top: 4rem;
+    width: 100%;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 1rem;
+    background: var(--gradient);
+    color: #fff;
+    font-weight: 500;
+
+    transition: all 200ms ease-in-out;
+}
+
+#receber a button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+    box-shadow:  13px 13px 27px #00240c,
+                -13px -13px 27px #001900;
+}
+
+@media (min-width: 1080px) {
+    section#receber .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section#receber header h2 {
+        font-size: 3rem;
+        margin-bottom: 7rem;
+    }
+
+    section#receber header h2 span {
+        font-size: 4rem;
+    }
+
+    section#receber .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8rem;
+    }
+
+    section#receber .cards .card img {
+        width: 12rem;
+    }
+
+    section#receber .cards .card h3 {
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
+    }
+
+    section#receber a button {
+        margin-top: 7rem;
+        font-size: 2rem;
+        padding: 1.2rem 4rem;
+    }
+
+}
+
+@keyframes icon {
+    50% {
+        transform: translateY(-5px);
+        filter: drop-shadow(-4px 4px 10px #ffffff4d);
+    }
+}

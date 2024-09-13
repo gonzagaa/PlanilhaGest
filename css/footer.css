@@ -1,0 +1,18 @@
+#footer {
+    background: linear-gradient(140deg, #000f3c33, #00000081, #0000001d,#00093d2d);
+    padding-block: 4rem;
+}
+
+#footer .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#footer p {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 300;
+}

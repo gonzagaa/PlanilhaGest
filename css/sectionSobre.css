@@ -1,0 +1,93 @@
+#sobre {
+    overflow: hidden;
+    position: relative;
+}
+
+#sobre .image img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: 1/1;
+    object-fit: cover;
+}
+
+#sobre .text {
+    margin-top: 3rem;
+
+    text-align: center;
+}
+
+#sobre .text h2 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+#sobre .text p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+#sobre .text p:nth-child(3),
+#sobre .text p:nth-child(4) {
+    font-weight: 300;
+    color: #dedede;
+}
+
+#sobre .text p:nth-child(3) span,
+#sobre .text p:nth-child(4) span {
+    color: #fff;
+    font-weight: 500;
+}
+
+#sobre .text button {
+    margin-top: 4rem;
+    width: 100%;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 1rem;
+    background: var(--gradient);
+    color: #fff;
+    font-weight: 500;
+
+    transition: all 200ms ease-in-out;
+}
+
+#sobre .text button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+    box-shadow:  13px 13px 27px #00240c,
+                -13px -13px 27px #001900;
+}
+
+@media (min-width: 1080px) {
+    section#sobre .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 8rem;
+        grid-template-areas: "A B";
+    }
+    section#sobre .text {
+        text-align: left;
+        grid-area: A;
+    }
+
+    section#sobre .text h2 {
+        font-size: 4rem;
+    }
+
+    section#sobre .text p {
+        font-size: 1.6rem;
+    }
+
+    section#sobre .text a button {
+        margin-top: 3rem;
+        font-size: 2rem;
+        padding: 1.2rem 4rem;
+    }
+}
+

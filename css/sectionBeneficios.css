@@ -1,0 +1,119 @@
+#beneficios {
+    position: relative;
+    overflow: hidden;
+}
+
+#beneficios header h2 {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 4rem;
+    font-weight: 600;
+}
+
+#beneficios header h2 span {
+    color: var(--green);
+}
+
+#beneficios .cards .card {
+    padding: 2rem;
+    border-radius: 0 2rem 2rem 0;
+
+    background: linear-gradient(145deg, #000509, #000b18);
+    box-shadow:  13px 13px 27px #000409,
+                -13px -13px 27px #00060c;
+
+    margin-bottom: 3rem;
+
+    position: relative;
+}
+
+#beneficios .cards .card:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: var(--gradient);
+    top: 0;
+    left: -4px;
+}
+
+#beneficios .cards .card img {
+    width: 8rem;
+    margin-left: -1.5rem;
+}
+
+#beneficios .cards .card p {
+    color: #d3d8ef;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+#beneficios .cards .card p span {
+    font-weight: 600;
+}
+
+#beneficios a button {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 1rem;
+    background: var(--gradient);
+    color: #fff;
+    font-weight: 500;
+
+    transition: all 200ms ease-in-out;
+}
+
+#beneficios a button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+    box-shadow:  13px 13px 27px #00240c,
+                -13px -13px 27px #001900;
+}
+
+@media (min-width: 1080px) {
+    section#beneficios .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#beneficios header h2 {
+        font-size: 3rem;
+        margin-bottom: 7rem;
+    }
+
+    section#beneficios .cards .row-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+    }
+
+    section#beneficios .cards .row-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    section#beneficios .cards .card::before {
+        display: none;
+    }
+
+    section#beneficios .cards .card {
+        margin-bottom: 3rem;
+        text-align: center;
+        border-radius: 2rem;
+        background: linear-gradient(145deg, #01070f, #000e1e);
+        box-shadow:  13px 13px 27px #000409,
+                -13px -13px 27px #000b15;
+    }
+
+    section#beneficios a button {
+        margin-top: 4rem;
+        font-size: 2rem;
+        padding: 1.2rem 4rem;
+    }
+}
