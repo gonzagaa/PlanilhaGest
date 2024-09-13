@@ -86,7 +86,7 @@
     font-size: 1.4rem;
 
     background: var(--gradient);
-    color: var(--white); 
+    color: #fff; 
     font-weight: 400;
 
     transition: all 200ms ease-in-out;
