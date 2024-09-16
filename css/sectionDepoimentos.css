@@ -1,0 +1,56 @@
+#depoimentos {
+    position: relative;
+    overflow: hidden;
+}
+
+#depoimentos header h2 {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 4rem;
+    font-weight: 600;
+}
+
+#depoimentos header h2 span {
+    color: var(--green);
+}
+
+#depoimentos .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+#depoimentos .cards .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#depoimentos .cards .card img {
+    width: 100%;
+}
+
+@media (min-width: 1080px) {
+    section#depoimentos .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section#depoimentos header h2 {
+        font-size: 3rem;
+        margin-bottom: 7rem;
+    }
+
+    section#depoimentos header h2 span {
+        font-size: 4rem;
+    }
+
+    section#depoimentos .content .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8rem;
+    }
+}
