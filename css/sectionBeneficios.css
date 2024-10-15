@@ -5,7 +5,7 @@
 
 #beneficios header h2 {
     font-size: 2.5rem;
-    color: var(--white);
+    color: var(--color-black);
     margin-bottom: 4rem;
     font-weight: 600;
 }
@@ -19,8 +19,8 @@
     border-radius: 0 2rem 2rem 0;
 
     background: linear-gradient(145deg, #000509, #000b18);
-    box-shadow:  13px 13px 27px #000409,
-                -13px -13px 27px #00060c;
+    box-shadow:  13px 13px 27px #0004093d,
+                -13px -13px 27px #00060c0f;
 
     margin-bottom: 3rem;
 
@@ -70,8 +70,8 @@
 #beneficios a button:hover {
     cursor: pointer;
     filter: brightness(1.1);
-    box-shadow:  13px 13px 27px #00240c,
-                -13px -13px 27px #001900;
+    box-shadow:  13px 13px 27px #00240c1a,
+                -13px -13px 27px #00190020;
 }
 
 @media (min-width: 1080px) {
@@ -107,8 +107,8 @@
         text-align: center;
         border-radius: 2rem;
         background: linear-gradient(145deg, #01070f, #000e1e);
-        box-shadow:  13px 13px 27px #000409,
-                -13px -13px 27px #000b15;
+        box-shadow:  13px 13px 27px #0004092d,
+                -13px -13px 27px #000b1531;
     }
 
     section#beneficios a button {

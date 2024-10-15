@@ -4,7 +4,7 @@
 }
 
 .modulo h3 {
-    color: #fff;
+    color: var(--color-black);
     font-size: 4rem;
     font-weight: 600;
     position: relative;
@@ -38,7 +38,7 @@
 .modulo h4 {
     text-align: center;
     font-size: 2rem;
-    color: #fff;
+    color: var(--color-black);
     font-weight: 400;
 
     margin-top: -.5rem;
@@ -46,7 +46,7 @@
 }
 
 .modulo p {
-    color: #d3d8ef;
+    color: #1d1d1d;
     margin-bottom: 1rem;
     font-size: 1.6rem;
 

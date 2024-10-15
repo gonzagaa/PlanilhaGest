@@ -18,14 +18,14 @@
 
 #sobre .text h2 {
     font-size: 3rem;
-    color: #fff;
+    color: var(--color-black);
     font-weight: 600;
 }
 
 #sobre .text p {
     font-size: 1.4rem;
     line-height: 1.6;
-    color: #fff;
+    color: #373737;
     font-weight: 500;
     margin-top: 2rem;
 }
@@ -33,12 +33,12 @@
 #sobre .text p:nth-child(3),
 #sobre .text p:nth-child(4) {
     font-weight: 300;
-    color: #dedede;
+    color: #101010;
 }
 
 #sobre .text p:nth-child(3) span,
 #sobre .text p:nth-child(4) span {
-    color: #fff;
+    color: #000000;
     font-weight: 500;
 }
 
@@ -59,8 +59,8 @@
 #sobre .text button:hover {
     cursor: pointer;
     filter: brightness(1.1);
-    box-shadow:  13px 13px 27px #00240c,
-                -13px -13px 27px #001900;
+    box-shadow:  13px 13px 27px #00240c1a,
+                -13px -13px 27px #00190020;
 }
 
 @media (min-width: 1080px) {

@@ -9,7 +9,7 @@
 
 #video h2 {
     font-size: 2.5rem;
-    color: var(--white);
+    color: var(--color-black);
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -19,7 +19,7 @@
 }
 
 #video .text p {
-    color: #d3d8ef;
+    color: var(--color-black);
     font-size: 1.6rem;
     line-height: 1.6;
     font-weight: 300;

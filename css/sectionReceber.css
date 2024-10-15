@@ -5,7 +5,7 @@
 
 #receber header h2 {
     font-size: 2.5rem;
-    color: var(--white);
+    color: var(--color-black);
     margin-bottom: 4rem;
     font-weight: 600;
 }
@@ -37,7 +37,7 @@
     font-weight: 500;
     margin-top: 1rem;
     font-size: 2rem;
-    color: #fff;
+    color: var(--color-black);
 }
 
 #receber a button {
@@ -57,8 +57,8 @@
 #receber a button:hover {
     cursor: pointer;
     filter: brightness(1.1);
-    box-shadow:  13px 13px 27px #00240c,
-                -13px -13px 27px #001900;
+    box-shadow:  13px 13px 27px #00240c1a,
+                -13px -13px 27px #00190020;
 }
 
 @media (min-width: 1080px) {

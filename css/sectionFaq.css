@@ -6,7 +6,7 @@
 
 #faq header h2 {
     font-size: 2.5rem;
-    color: var(--white);
+    color: var(--color-black);
     margin-bottom: 4rem;
     font-weight: 600;
 }
@@ -35,8 +35,8 @@
     font-size: 1.4rem;
 
     background: linear-gradient(145deg, #01070f, #000e1e);
-        box-shadow:  13px 13px 27px #00040973,
-                -13px -13px 27px #000b15b1;
+        box-shadow:  13px 13px 27px #0004091a,
+                -13px -13px 27px #000b151a;
 
     display: flex;
     text-align: left;
@@ -62,7 +62,7 @@
 
 #faq details[open] summary {
     border-radius: 2rem 2rem 0 0;
-    background: linear-gradient(140deg, #00000046, #00000046, #0000001d,#00000046);
+    background: linear-gradient(145deg, #01070f, #000e1e);
 
     border: 2px solid #ababab93;
     border-bottom: 0;
@@ -91,7 +91,7 @@ summary::-webkit-details-marker {
 }
 
 #faq details p {
-    background: linear-gradient(140deg, #00196533, #00000046, #0000001d,#a482fa2d);
+    background: linear-gradient(145deg, #020d1d, #011c3c);
 
     font-size: 1.8rem;
     color: #e1e3ef;
@@ -108,9 +108,9 @@ summary::-webkit-details-marker {
 }
 
 #faq .card {
-    box-shadow:  13px 13px 27px #00040973,
-                -13px -13px 27px #000b15b1;
-    background: linear-gradient(140deg, #00196533, #00000046, #0000001d,#a482fa2d);
+    background: linear-gradient(145deg, #01070f, #000e1e);
+        box-shadow:  13px 13px 27px #0004091a,
+                -13px -13px 27px #000b151a;
 
     padding: 3rem;
     border-radius: 2rem;
