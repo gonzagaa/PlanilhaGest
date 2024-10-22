@@ -1,0 +1,158 @@
+#acesso .content {
+    position: relative;
+    margin-top: 2rem;
+    text-align: center;
+    color: #fff;
+
+    width: 100%;
+    padding: 4rem;
+    border-radius: 2rem;
+
+    background: linear-gradient(to bottom, #01060c, #001226);
+}
+
+#acesso .content h2 {
+    color: var(--white);
+    line-height: 1;
+    font-size: 2.5rem;
+}
+
+#acesso .content .cards {
+    margin-block: 5rem;
+    position: relative;
+}
+
+#acesso .content .cards::before,
+#acesso .content .cards::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    transform: translate(-50%, 0);
+    left: 50%;
+    background: linear-gradient(to right, transparent, #1DCA1D, transparent);
+}
+
+#acesso .content .cards::before {
+    top: -2.5rem;
+}
+
+#acesso .content .cards::after {
+    bottom: -2.5rem;
+}
+
+
+#acesso .content .cards .card {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+#acesso .content .cards .card ion-icon {
+    font-size: 1.8rem;
+    color: var(--green);
+}
+
+#acesso .content .cards .card p {
+    font-size: 1.8rem;
+}
+
+#acesso .price {
+    margin-bottom: 5rem;
+}
+
+#acesso .price p {
+    font-size: 1.4rem;
+    color: #d4d4d4;
+    font-weight: 400;
+}
+
+#acesso .price p span {
+    text-decoration: line-through;
+}
+
+#acesso .price h3 {
+    font-size: 5rem;
+    background: linear-gradient(40deg, #CFCFCF 70%, #1DCA1D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#acesso p.pagamento {
+    font-size: 1.4rem;
+    color: var(--white);
+    font-weight: 400;
+}
+
+#acesso a button {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 1rem;
+    background: var(--gradient);
+    color: #fff;
+    font-weight: 500;
+
+    transition: all 200ms ease-in-out;
+}
+
+#acesso a button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+    box-shadow:  13px 13px 27px #00240c26,
+                -13px -13px 27px #0019001d;
+}
+
+@media (min-width: 1080px) {
+    section#acesso .wrapper {
+        padding-inline: 15%;
+    }
+
+    section#acesso .wrapper .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section#acesso .content h2 {
+        font-size: 4rem;
+    }
+
+    section#acesso .content .cards {
+        margin-block: 7rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section#acesso .content .cards::before {
+        top: -3.5rem;
+    }
+    
+    section#acesso .content .cards::after {
+        bottom: -3.5rem;
+    }
+
+    section#acesso .content .cards .card p {
+        font-size: 2rem;
+    }
+
+    section#acesso .price {
+        margin-bottom: 7rem;
+    }
+
+    section#acesso .price p {
+        font-size: 2rem;
+    }
+
+    section#acesso .price h3 {
+        font-size: 8rem;
+    }
+
+    section#acesso a {
+        width: 100%;
+    }
+}
